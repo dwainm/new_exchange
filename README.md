@@ -11,7 +11,18 @@ A marketplace where buyers ans sellers interact to trade listed products at an a
 - Possibly providing an alternative implementation for proprietary software.
 
 ### What is required from an exchange?
-TBD
+We need some way to have orders placed.
+We need some way to match orders.
+We need some way to notify buyers and sellers of trades.
+We need some way for new products to be added.
+We need some way for traders to be regirstered.
+
+#### Placing orders
+*We acccept the following:*
+product: the unique identifier of the product the order relates to.
+type: bid | aks (bid for buying and ask for selling)
+qty: number of products the order is for.
+amount: value of a single qty of the product in cents. This will be mutliplied by qty to get to total order value.
 
 ### How do you test the exchange? 
 TBD
