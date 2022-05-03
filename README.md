@@ -1,19 +1,19 @@
-#New Exchange
+# New Exchange
 An exchange marketplace written in Go
 
 ### What is an exchange?
 A marketplace where buyers ans sellers interact to trade listed products at an agreeable price.
 
-###What its he goal of the project?
+### What its he goal of the project?
 - Learning about exchanges.
 - Learning go language in the process
 - Building something interesting.
 - Possibly providing an alternative implementation for proprietary software.
 
-###What is required from an exchange?
+### What is required from an exchange?
 TBD
 
-###How do you test the exchange? 
+### How do you test the exchange? 
 TBD
 
 
