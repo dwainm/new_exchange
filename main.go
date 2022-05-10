@@ -6,8 +6,6 @@ import (
 	"time"
 )
 
-var orderBookIDIncrementor = 0
-
 type OrderType string
 
 const (
@@ -34,16 +32,22 @@ type Order struct {
 }
 
 type OrderBookEntry struct {
+	id           int
 	o            *Order
 	confirmation string
 }
 
+type OrderBook struct {
+	idIncrementor int
+	entries       []OrderBookEntry
+}
+
 // @todo possible issues with pass by value
-func placeOrder(o *Order, ob []OrderBookEntry) OrderBookEntry {
-	orderBookIDIncrementor++
-	confirmation := strconv.Itoa(orderBookIDIncrementor) + "-" + o.orderType.String() + "-" + o.product
-	newEntry := OrderBookEntry{o, confirmation}
-	ob = append(ob, newEntry)
+func placeOrder(o *Order, ob *OrderBook) OrderBookEntry {
+	ob.idIncrementor++
+	confirmation := strconv.Itoa(ob.idIncrementor) + "-" + o.orderType.String() + "-" + o.product
+	newEntry := OrderBookEntry{ob.idIncrementor, o, confirmation}
+	ob.entries = append(ob.entries, newEntry)
 	return newEntry
 }
 
