@@ -1,3 +1,6 @@
+
+![Tests](https://github.com/dwainm/new_exchange/actions/workflows/go.yml/badge.svg)
+
 # New Exchange
 An exchange marketplace written in Go
 
