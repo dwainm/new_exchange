@@ -7,7 +7,7 @@ An exchange marketplace written in Go
 ### What is an exchange?
 A marketplace where buyers and sellers interact to trade listed products at an agreeable price.
 
-### What its he goal of the project?
+### What is the goal of the project?
 - Learning about exchanges.
 - Learning go language in the process
 - Building something interesting.
