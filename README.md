@@ -15,7 +15,7 @@ A marketplace where buyers and sellers interact to trade listed products at an a
 
 ### What is required from an exchange?
 - [x] We need some way to have orders placed.
-- [ ] We need some way to match orders.
+- [ ] We need some way to match orders [FIFO](https://www.oreilly.com/library/view/learn-algorithmic-trading/9781789348347/20877459-541d-4448-a404-ad845fec5afd.xhtml).
 - [ ] We need some way to notify buyers and sellers of trades.
 - [ ] We need some way for new products to be added.
 - [ ] We need some way for traders to be regirstered.
