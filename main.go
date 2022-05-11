@@ -6,21 +6,20 @@ import (
 	"time"
 )
 
-type OrderType string
+type OrderType int
+
+type orderTypes struct {
+	buy  OrderType
+	sell OrderType
+}
 
 const (
-	BUY  OrderType = "BUY"
-	SELL           = "SELL"
+	BUY OrderType = iota + 0 // ignoring the 0 default
+	SELL
 )
 
 func (t OrderType) String() string {
-	if t == BUY {
-		return "BUY"
-	} else if t == SELL {
-		return "SELL"
-	} else {
-		return "unknown"
-	}
+	return [2]string{"BUY", "SELL"}[t]
 }
 
 type Order struct {
@@ -39,7 +38,15 @@ type OrderBookEntry struct {
 
 type OrderBook struct {
 	idIncrementor int
+	ot            orderTypes
 	entries       []OrderBookEntry
+}
+
+func newOrderBook() *OrderBook {
+	ob := &OrderBook{}
+	ob.ot.buy = BUY
+	ob.ot.sell = SELL
+	return ob
 }
 
 // @todo possible issues with pass by value
