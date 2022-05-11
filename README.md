@@ -14,11 +14,11 @@ A marketplace where buyers and sellers interact to trade listed products at an a
 - Possibly providing an alternative implementation for proprietary software.
 
 ### What is required from an exchange?
-We need some way to have orders placed.
-We need some way to match orders.
-We need some way to notify buyers and sellers of trades.
-We need some way for new products to be added.
-We need some way for traders to be regirstered.
+- [x] We need some way to have orders placed.
+- [ ] We need some way to match orders.
+- [ ] We need some way to notify buyers and sellers of trades.
+- [ ] We need some way for new products to be added.
+- [ ] We need some way for traders to be regirstered.
 
 #### Placing orders
 *We acccept the following:*
