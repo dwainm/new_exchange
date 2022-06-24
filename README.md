@@ -2,7 +2,7 @@
 ![Tests](https://github.com/dwainm/new_exchange/actions/workflows/go.yml/badge.svg)
 
 # New Exchange
-An exchange marketplace written in Go
+An exchange marketplace written in Go.
 
 ### What is an exchange?
 A marketplace where buyers and sellers interact to trade listed products at an agreeable price.
@@ -14,7 +14,7 @@ A marketplace where buyers and sellers interact to trade listed products at an a
 - Possibly providing an alternative implementation for proprietary software.
 
 ### What is required from an exchange?
-We need some way to have orders placed.
+[x] We need some way to have orders placed.
 We need some way to match orders.
 We need some way to notify buyers and sellers of trades.
 We need some way for new products to be added.
