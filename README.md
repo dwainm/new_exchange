@@ -13,24 +13,16 @@ A marketplace where buyers and sellers interact to trade listed products at an a
 - Building something interesting.
 - Possibly providing an alternative implementation for proprietary software.
 
-### What is required from an exchange?
-- [x] We need some way to have orders placed.
-- [ ] We need some way to match orders [FIFO](https://www.cmegroup.com/confluence/display/EPICSANDBOX/Supported+Matching+Algorithms#:~:text=Trade%20Futures%20Allocation-,FIFO,is%20the%20first%20order%20matched.).
-- [ ] We need some way to notify buyers and sellers of trades.
-- [ ] We need some way for new products to be added.
-- [ ] We need some way for traders to be regirstered.
+### Milestones.
+Software is never finished, but I only have limitted time, so I need to break this project up into milestones. See the list below with links:
 
-#### Placing orders
-*We acccept the following:*
-product: the unique identifier of the product the order relates to.
-type: bid | aks (bid for buying and ask for selling)
-qty: number of products the order is for.
-amount: value of a single qty of the product in cents. This will be mutliplied by qty to get to total order value.
+1 - All in one file. No outside access. [V1 Working File](docs/milestone_1.md).
 
-### How do you test the exchange? 
-TBD
+2 - Adding authentication for traders and a basic trading API.
 
+3 - The exchange in two pieces, separating order matching from order placing.
 
-### V1
-A working exchange, with listed products, where an order can be placed, matched and confirmed. The exchange will use a simple matching algorithm for starters.
+4 - The API as it's own piece separate from the order placing.
+
+5 - System verification. A way for us to verify that the system works correctly.
 
